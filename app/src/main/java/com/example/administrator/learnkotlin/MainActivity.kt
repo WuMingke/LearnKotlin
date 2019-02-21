@@ -9,12 +9,19 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-       // var max = max(2, 4)
+        // var max = max(2, 4)
         //val args:Array<String> = ["Bob",""]
         //main(args)
-        val man = Person("Bob", "男")
+        //val man = Person("Bob", "男")
         // println(man.name)
-        Log.i("wmk", man.name)
+
+        //Log.i("wmk", man.name)
+
+        //集合
+        val set = hashSetOf(1, 7, 53)
+        val list = arrayListOf(1, 7, 53)
+        val map = hashMapOf(1 to "one", 7 to "two", 53 to "three")
+
 
     }
 
