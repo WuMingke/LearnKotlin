@@ -26,6 +26,9 @@ class MainActivity : AppCompatActivity() {
         val list = arrayListOf(1, 7, 53)
         val map = hashMapOf(1 to "one", 7 to "two", 53 to "three")
 
+        list.max()
+
+
 
     }
 
