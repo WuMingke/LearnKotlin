@@ -4,7 +4,10 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 
+const val min: String = "12"
+
 class MainActivity : AppCompatActivity() {
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,6 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         //Log.i("wmk", man.name)
 
+
         //集合
         val set = hashSetOf(1, 7, 53)
         val list = arrayListOf(1, 7, 53)
@@ -28,7 +32,7 @@ class MainActivity : AppCompatActivity() {
     fun max(a: Int, b: Int): Int = if (a > b) a else b
 
     fun main(args: Array<String>) {
-        val name = if (args.size > 0) args[0] else "Kotlin"
+        val name = if (args.isNotEmpty()) args[0] else "Kotlin"
         println("Hello,$name!")
     }
 
