@@ -21,13 +21,15 @@ class MainActivity : AppCompatActivity() {
         //Log.i("wmk", man.name)
 
 
-        //集合
-        val set = hashSetOf(1, 7, 53)
-        val list = arrayListOf(1, 7, 53)
-        val map = hashMapOf(1 to "one", 7 to "two", 53 to "three")
+        /*    //集合
+            val set = hashSetOf(1, 7, 53)
+            val list = arrayListOf(1, 7, 53)
+            val map = hashMapOf(1 to "one", 7 to "two", 53 to "three")
 
-        list.max()
+            list.max()*/
 
+        val sum = { x: Int, y: Int -> x + y }
+        println(sum(1, 2))
 
 
     }
